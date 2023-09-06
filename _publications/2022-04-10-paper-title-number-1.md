@@ -5,7 +5,7 @@ title: >-
 collection: publications
 permalink: /publication/pub1
 excerpt: This paper is about ......
-date: {}
+date: 
 venue: Nature Geoscience
 paperurl: 'http://guidov.github.io/files/Vettoretti_etal_2022_main.pdf'
 citation: >-
