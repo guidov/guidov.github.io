@@ -80,8 +80,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "SideBar Profile Name"
-  avatar           : "profile.png"
+  name             : "Profile / Social Media"
+  avatar           : "gv.png"
   bio              : "Climate Scientist"
   location         : "Copenhagen, Denmark"
   employer         :
