@@ -109,7 +109,7 @@ Driven by this urgency, I am deeply committed to pushing the boundaries of our s
 
 ## GRANT AWARDS:
 
-- ClimTip (Awarded July 2023): Overseeing a work package within a HORIZON EUROPE grant (Total 8 million euro): I have received 24 PM for UCPH
+- ClimTip (Awarded July 2023): Overseeing a work package for UCPH within a HORIZON EUROPE grant (Total 8 million euro): I have received 24 PM for UCPH
 
 ## OUTREACH ACTIVITIES:
 
