@@ -7,8 +7,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-“Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.”
-― Richard Feynmann
+.
+This is the front page of a my website that is under development 
 
 First heading
 ======
