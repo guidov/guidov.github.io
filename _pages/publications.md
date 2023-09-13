@@ -7,7 +7,7 @@ author_profile: true
 
 ## Recent Publications
 
-1. Fohlmeister et al. (2023) Global reorganisation of atmospheric circulation during Dansgaard-Oeschger cycles, PNAS.
+1. Fohlmeister et al. (2023) Global reorganisation of atmospheric circulation during Dansgaard-Oeschger cycles, PNAS. 120(36).
 
 2. Malmierca-Vallet, I., Sime, L. C. and the D–O community members (2023) Dansgaard–Oeschger events in climate models: review and baseline Marine Isotope Stage 3 (MIS3) protocol. Climate of the Past 19, 915–942.
 
