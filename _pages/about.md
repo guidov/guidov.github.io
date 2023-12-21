@@ -12,7 +12,7 @@ redirect_from:
 ― Richard Feynmann
 
 ---
-![dynamical_systems](/images/OIP.jpeg)
+![dynamical_systems](/images/skybar.png)
 
 About Me
 ======

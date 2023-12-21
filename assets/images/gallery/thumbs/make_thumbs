@@ -1,0 +1,4 @@
+mogrify -path ./ -resize 10% Figure2_runoff_scatter.png
+mogrify -path thumbs -resize 20% images/*
+
+

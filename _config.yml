@@ -306,3 +306,9 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Gallery
+#
+imagesurl: "/assets/images/gallery/img/"
+thumbsurl: "/assets/images/gallery/thumbs/"
+
