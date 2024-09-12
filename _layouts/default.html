@@ -4,14 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - {{ site.title }}</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+        }
+        nav {
+            width: 200px;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
     </header>
-    <main>
-        {{ content }}
-    </main>
+    <div class="content-wrapper">
+        <nav>
+            <ul>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/cacophony">Cacophony</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            {{ content }}
+        </main>
+    </div>
     <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
     </footer>
