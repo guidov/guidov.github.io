@@ -72,6 +72,13 @@ WantedBy=default.target
    - Check the status: `systemctl --user status whisper-dictation.service`
    - Enable the service to start on boot: `systemctl --user enable whisper-dictation.service`
 
+3. After making changes to the service file, reload the systemd daemon and start the service:
+   ```
+   systemctl daemon-reload
+   systemctl --user start whisper-dictation.service
+   systemctl --user status whisper-dictation.service
+   ```
+
 This setup allows for a seamless integration of the tool into your workflow. The service will automatically restart if it crashes, and it logs both standard output and errors to a file for easy troubleshooting.
 
 ## OpenAI API Key and Usage
