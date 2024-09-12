@@ -1,0 +1,11 @@
+title: Guido's Blog
+description: A simple blog using Jekyll
+url: "https://guidov.github.io"
+github_username: guidov
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+
+permalink: /:year/:month/:day/:title/
