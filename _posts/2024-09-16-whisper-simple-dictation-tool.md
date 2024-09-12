@@ -85,6 +85,14 @@ This setup allows for a seamless integration of the tool into your workflow. The
 
 To use Whisper Simple Dictation, you'll need to set up your OpenAI API key. Make sure to keep this key secure and never share it publicly.
 
+To add your OpenAI API key, you can use the following command:
+
+```bash
+echo sk-your_api_key_here > ~/.config/openai.token
+```
+
+Replace `sk-your_api_key_here` with your actual OpenAI API key. This command will create or overwrite the `openai.token` file in your `~/.config/` directory with your API key.
+
 ## User Experience
 
 In my experience, the tool is quite fast and accurate. It uses the right control key to transcribe speech to text (STT). While it doesn't work in GNOME terminals (stay tuned for a future post on this), it integrates well with code development environments like Microsoft Visual Studio Code ("code") and Cursor AI ("cursor").
