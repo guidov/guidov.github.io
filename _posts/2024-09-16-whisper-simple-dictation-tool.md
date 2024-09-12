@@ -49,10 +49,25 @@ Give it a try and experience the power of open-source speech recognition!
 
 To make Whisper Simple Dictation even more convenient, you can set up a systemd service for remote connection. Here's how I've done it:
 
-1. I created a service file at `~/.config/systemd/user/whisper-dictation.service`.
+1. I created a service file at `~/.config/systemd/user/whisper-dictation.service` with the following content:
+
+```
+[Unit]
+Description=Whisper Dictation Service
+
+[Service]
+ExecStart=/bin/bash /home/guido/whisper-simple-dictation/run_dictation_remote.sh en
+StandardOutput=file:/home/guido/logs/whisper-dictation.log
+StandardError=file:/home/guido/logs/whisper-dictation.log
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
 2. To start the service, I use the command: `systemctl --user start whisper-dictation.service`.
 
-This setup allows for a seamless integration of the tool into your workflow.
+This setup allows for a seamless integration of the tool into your workflow. The service will automatically restart if it crashes, and it logs both standard output and errors to a file for easy troubleshooting.
 
 ## OpenAI API Key and Usage
 
