@@ -32,6 +32,11 @@
             flex: 1;
             padding: 20px;
         }
+        .right-column {
+            width: 250px;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
         header, footer {
             background-color: #333;
             color: white;
@@ -58,6 +63,17 @@
         <main>
             {{ content }}
         </main>
+        <div class="right-column">
+            <h3>Recent Posts</h3>
+            <ul>
+                {% for post in site.posts limit:5 %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        <small>{{ post.date | date_to_string }}</small>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
     <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
