@@ -65,7 +65,12 @@ Restart=always
 WantedBy=default.target
 ```
 
-2. To start the service, I use the command: `systemctl --user start whisper-dictation.service`.
+2. To manage the service, use the following commands:
+   - Start the service: `systemctl --user start whisper-dictation.service`
+   - Stop the service: `systemctl --user stop whisper-dictation.service`
+   - Restart the service: `systemctl --user restart whisper-dictation.service`
+   - Check the status: `systemctl --user status whisper-dictation.service`
+   - Enable the service to start on boot: `systemctl --user enable whisper-dictation.service`
 
 This setup allows for a seamless integration of the tool into your workflow. The service will automatically restart if it crashes, and it logs both standard output and errors to a file for easy troubleshooting.
 
