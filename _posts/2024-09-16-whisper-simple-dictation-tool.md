@@ -21,15 +21,34 @@ In the world of speech-to-text technology, a new open-source tool has caught my 
 
 Whisper Simple Dictation uses your computer's microphone to capture audio. It then processes this audio in chunks using the Whisper model, converting speech to text in real-time. The transcribed text is displayed in a simple interface where you can edit and copy it as needed.
 
-## Getting Started
+## Installation and Getting Started
 
-To use Whisper Simple Dictation, you'll need to:
+To use Whisper Simple Dictation, follow these steps:
 
-1. Clone the GitHub repository
-2. Install the required dependencies (Python, PyQt6, and others)
-3. Run the application using Python
+1. Clone the GitHub repository:
+   ```bash
+   git clone https://github.com/filyp/whisper-simple-dictation.git
+   cd whisper-simple-dictation
+   ```
 
-For detailed instructions, visit the [project's GitHub page](https://github.com/filyp/whisper-simple-dictation).
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Install PyQt6 (if not already installed):
+   ```bash
+   pip install PyQt6
+   ```
+
+4. Run the application:
+   ```bash
+   python dictation.py
+   ```
+
+For more detailed instructions and troubleshooting, visit the [project's GitHub page](https://github.com/filyp/whisper-simple-dictation).
+
+Note: Ensure you have Python 3.7 or later installed on your system before starting the installation process.
 
 ## Potential Applications
 
