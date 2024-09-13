@@ -14,17 +14,18 @@
         </div>
     </header>
     <div class="content-wrapper">
-        <nav>
+        <nav class="left-menu">
             <ul>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
                 <li><a href="{{ '/about' | relative_url }}">About Me</a></li>
-                <li><a href="{{ '/cacophony' | relative_url }}">Cacophony</a></li>
+                <li><a href="{{ '/cacophony' | relative_url }}" id="cacophony-link">Cacophony</a></li>
                 <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
             </ul>
         </nav>
         <main>
             {{ content }}
         </main>
-        <div class="right-column">
+        <div class="right-menu" id="right-menu">
             <h3>Recent Posts</h3>
             <ul>
                 {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
@@ -37,6 +38,17 @@
             </ul>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cacophonyLink = document.getElementById('cacophony-link');
+            const rightMenu = document.getElementById('right-menu');
+
+            cacophonyLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                rightMenu.classList.toggle('visible');
+            });
+        });
+    </script>
     <footer>
         <div class="content-wrapper">
             <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
