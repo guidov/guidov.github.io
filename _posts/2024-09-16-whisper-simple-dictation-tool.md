@@ -25,23 +25,30 @@ Whisper Simple Dictation uses your computer's microphone to capture audio. It th
 
 To use Whisper Simple Dictation, follow these steps:
 
-1. Clone the GitHub repository:
+1. Clone the GitHub repository and navigate to the project directory:
    ```bash
    git clone https://github.com/filyp/whisper-simple-dictation.git
    cd whisper-simple-dictation
    ```
 
-2. Install the required dependencies:
+2. Create a virtual environment:
    ```bash
-   pip install -r requirements.txt
+   python3 -m venv venv --copies
    ```
 
-3. Install PyQt6 (if not already installed):
+3. Activate the virtual environment:
    ```bash
-   pip install PyQt6
+   source venv/bin/activate  # On Unix or MacOS
+   # Or
+   venv\Scripts\activate  # On Windows
    ```
 
-4. Run the application:
+4. Install the required dependencies:
+   ```bash
+   venv/bin/python -m pip install -r requirements_remote.txt
+   ```
+
+5. Run the application:
    ```bash
    python dictation.py
    ```
