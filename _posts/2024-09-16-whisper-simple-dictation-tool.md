@@ -127,23 +127,5 @@ The speed and accuracy of the transcription have significantly improved my produ
 
 Remember, the power of open-source tools like Whisper Simple Dictation lies not just in their functionality, but also in the ability to customize and integrate them into your unique workflow. Happy dictating!
 
-## Automating GitHub Authentication
+I hear an LLM in the woods....
 
-If you're frequently pushing changes to GitHub, you might want to automate the authentication process. Here's how you can do it:
-
-1. Set up Git to cache your credentials:
-   ```
-   git config --global credential.helper cache
-   ```
-
-2. Update your remote URL to include your token (replace YOUR_TOKEN with your actual GitHub token):
-   ```
-   git remote set-url origin https://YOUR_TOKEN@github.com/username/repository.git
-   ```
-
-3. Verify the change:
-   ```
-   git remote -v
-   ```
-
-This setup will allow you to push changes to GitHub without entering your username and password each time. Remember to keep your token secure and never share it publicly!
