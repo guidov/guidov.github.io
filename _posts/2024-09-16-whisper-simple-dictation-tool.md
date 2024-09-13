@@ -50,7 +50,7 @@ To use Whisper Simple Dictation, follow these steps:
 
 5. Run the application:
    ```bash
-   python dictation.py
+   bash run_dictation_remote.sh en
    ```
 
 For more detailed instructions and troubleshooting, visit the [project's GitHub page](https://github.com/filyp/whisper-simple-dictation).
