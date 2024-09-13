@@ -53,7 +53,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-# Add these lines if they're not already present
+
+# Custom settings
 permalink: /:year/:month/:day/:title/
-plugins:
-  - jekyll-feed
+sass:
+  style: compressed
