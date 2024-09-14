@@ -1,8 +1,11 @@
 ---
 layout: post
 title: "Whisper Simple Dictation: A Powerful Open-Source Speech-to-Text Tool"
-date: 2023-09-16 12:00:00 -0400
-categories: [tools, speech-to-text, open-source]
+date: 2024-09-14
+categories:
+  - tools
+  - speech-to-text
+  - open-source
 ---
 
 # Exploring Whisper Simple Dictation

@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Welcome to My Blog
+# Welcome to Blogaphony
 
 {% for post in site.posts %}
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>

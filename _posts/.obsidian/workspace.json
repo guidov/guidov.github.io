@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-09-16-whisper-simple-dictation-tool.md",
+                "file": "2024-09-12-first-cacophony-post.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-09-16-whisper-simple-dictation-tool.md",
+                "file": "2024-09-12-first-cacophony-post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-09-16-whisper-simple-dictation-tool.md",
+                "file": "2024-09-12-first-cacophony-post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-09-16-whisper-simple-dictation-tool.md"
+                "file": "2024-09-12-first-cacophony-post.md"
               }
             }
           }
@@ -148,10 +148,11 @@
   },
   "active": "e34ccb06fd19293c",
   "lastOpenFiles": [
-    "2024-09-15-second-cacophony-post.md",
-    "2024-09-14-first-cacophony-post.md",
-    "2024-09-17-github-automation.md",
-    "2024-09-16-whisper-simple-dictation-tool.md",
+    "2024-09-14-whisper-simple-dictation-tool.md",
+    "2024-09-13-github-automation.md",
+    "2024-09-12-first-cacophony-post.md",
+    "2024-09-13a-second-cacophony-post.md",
+    "2024-09-12b-welcome-to-my-blog.md",
     "Untitled.canvas"
   ]
 }
