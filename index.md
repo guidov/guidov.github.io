@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-![Banner Image](/assets/images/banner_thin.png)
+<img src="/assets/images/banner_thin.png" alt="Banner Image" style="width: 100%; max-width: 1200px; height: auto;">
 
 # Welcome to My World of Earth Physics and Climate Science
 
