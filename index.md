@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-![Banner Image](_images/banner_thin.png)
+![Banner Image](/assets/images/banner_thin.png)
 
 # Welcome to My World of Earth Physics and Climate Science
 
