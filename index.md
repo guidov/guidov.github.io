@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+![Banner Image](_images/banner_thin.png)
+
 # Welcome to My World of Earth Physics and Climate Science
 
 As a researcher in the field of Earth System physics, I am deeply fascinated by the intricate workings of our planet's climate system. My journey in understanding the Earth's complex dynamics has led me to explore various aspects of climate science, from the fundamental physical processes to the cutting-edge technologies that help us unravel its mysteries.
