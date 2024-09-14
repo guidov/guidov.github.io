@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="{{ '/' | relative_url }}">Home</a></li>
                 <li><a href="{{ '/about' | relative_url }}">About Me</a></li>
-                <li><a href="{{ '/cacophony.markdown' | relative_url }}" id="cacophony-link">Cacophony</a></li>
+                <li><a href="{{ '/cacophony' | relative_url }}" id="cacophony-link">Cacophony</a></li>
                 <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
             </ul>
         </nav>
@@ -45,8 +45,14 @@
 
             cacophonyLink.addEventListener('click', function(e) {
                 e.preventDefault();
-                rightMenu.classList.toggle('visible');
+                window.location.href = this.href;
+                rightMenu.classList.add('visible');
             });
+
+            // Show right menu if on Cacophony page
+            if (window.location.pathname.includes('cacophony')) {
+                rightMenu.classList.add('visible');
+            }
         });
     </script>
     <footer>
