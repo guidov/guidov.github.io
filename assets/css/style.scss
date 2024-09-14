@@ -107,6 +107,31 @@ main {
     color: #666;
 }
 
+/* About page styles */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.about-content h2 {
+    font-size: 1.8em;
+    margin-top: 1.5em;
+}
+
+.about-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-content ul li {
+    margin-bottom: 0.5em;
+}
+
 @media (max-width: 768px) {
     .right-menu {
         width: 100%;
