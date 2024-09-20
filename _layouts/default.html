@@ -19,6 +19,7 @@
                 <li><a href="{{ '/' | relative_url }}">Home</a></li>
                 <li><a href="{{ '/about' | relative_url }}">About Me</a></li>
                 <li><a href="{{ '/cacophony' | relative_url }}" id="cacophony-link">Cacophony</a></li>
+                <li><a href="{{ '/podcasts' | relative_url }}" id="podcasts-link">Podcasts</a></li>
                 <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
             </ul>
         </nav>
@@ -41,6 +42,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const cacophonyLink = document.getElementById('cacophony-link');
+            const podcastsLink = document.getElementById('podcasts-link');
             const rightMenu = document.getElementById('right-menu');
 
             cacophonyLink.addEventListener('click', function(e) {
@@ -49,9 +51,17 @@
                 rightMenu.classList.add('visible');
             });
 
-            // Show right menu if on Cacophony page
+            podcastsLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = this.href;
+                rightMenu.classList.remove('visible');
+            });
+
+            // Show right menu if on Cacophony page, hide on Podcasts page
             if (window.location.pathname.includes('cacophony')) {
                 rightMenu.classList.add('visible');
+            } else if (window.location.pathname.includes('podcasts')) {
+                rightMenu.classList.remove('visible');
             }
         });
     </script>
