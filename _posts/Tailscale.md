@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Tailscale Setup on WSL"
+date: 2024-09-15
+categories: [tailscale, networking, wsl]
+---
+
 To install
 Verify that you are on WSL 2. From Powershell, run the following command: wsl -l -v. In the VERSION column you should see a 2. This means you are using WSL 2.
 Start your WSL 2 instance from Powershell by running wsl.exe or opening up a Linux terminal tab (if you have it already configured).

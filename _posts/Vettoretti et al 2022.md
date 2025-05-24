@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Vettoretti et al 2022 - Atmospheric CO2 Control of Climate Oscillations"
+date: 2024-09-15
+categories: [climate, research]
+---
+
 Summary
 
 This research investigates the Dansgaard–Oeschger (D–O) oscillation, a millennial-scale climate pattern that occurred during the last glacial period. The study uses Earth system model simulations to show that the D–O oscillation was controlled by atmospheric carbon dioxide (CO2) concentrations. The models demonstrate that within a specific range of CO2 levels (~190–225 parts per million), the climate system exhibits spontaneous oscillations between cold stadial and warm interstadial states. Outside this range, the system remains in either a stable cold or warm state. The authors propose a new theoretical framework for explaining the D–O oscillation, based on a slow–fast dynamical system model. This framework suggests that the oscillation is driven by a complex interplay between the ocean, atmosphere, and sea ice, with CO2 acting as a control parameter. The study also explores the effects of Heinrich events, which are massive iceberg discharges from ice sheets, on the D–O oscillation. They find that Heinrich events can trigger abrupt transitions to interstadial states but are not essential for the long-term operation of the oscillation. The research provides valuable insights into the complex dynamics of glacial climate variability and highlights the importance of CO2 in regulating these fluctuations.

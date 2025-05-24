@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Paper-QA Streamlit App Setup"
+date: 2024-09-15
+categories: [streamlit, python, ai]
+---
+
 To get `paper-qa2` functioning as a Streamlit app, you can follow these steps:
 
 1. **Install Dependencies**:  

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "APC Extension Setup"
-date: 2025-05-24
+date: 2024-09-15
+categories: [extensions, tools]
 ---
 
 1. Open a terminal and navigate to the directory where you downloaded the AppImage.

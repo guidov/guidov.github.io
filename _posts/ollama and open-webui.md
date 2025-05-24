@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Ollama and Open-WebUI Setup"
+date: 2024-09-15
+categories: [ai, llm, setup]
+---
+
 install ollama
 ollama run yi-coder:1.5b
 

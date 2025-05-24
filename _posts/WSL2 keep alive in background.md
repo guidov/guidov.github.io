@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Keeping WSL2 Alive in Background"
+date: 2024-09-15
+categories: [wsl, windows]
+---
+
 ```
 [wsl2]
 vmIdleTimeout=-1

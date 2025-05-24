@@ -1,4 +1,11 @@
 
+---
+layout: post
+title: "Judd et al. 2024 - A Half Billion Years of Temperature"
+date: 2024-09-15
+categories: [climate, research]
+---
+
 ## Editor’s summary
 
 Understanding how global mean surface temperature (GMST) has varied over the past half-billion years, a time in which evolutionary patterns of flora and fauna have had such an important influence on the evolution of climate, is essential for understanding the processes driving climate over that interval. Judd _et al_. present a record of GMST over the past 485 million years that they constructed by combining proxy data with climate modeling (see the Perspective by Mills). They found that GMST varied over a range from 11° to 36°C, with an “apparent” climate sensitivity of ∼8°C, about two to three times what it is today. —Jesse Smith

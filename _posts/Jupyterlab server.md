@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Jupyterlab Server Setup"
+date: 2024-09-15
+categories: [jupyter, server]
+---
+
 base) guido@farty:/etc/systemd/system$ more jupyterlab.service 
 [Unit]
 Description=Jupyterlab
