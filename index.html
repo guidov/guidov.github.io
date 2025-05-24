@@ -4,7 +4,13 @@ title: Blog
 ---
 
 <div class="home">
-  <h1 class="page-heading">Blog Posts</h1>
+  <nav class="simple-nav">
+    <ul>
+      <li class="active"><a href="/">Blog Posts</a></li>
+      <li><a href="/podcasts.html">Podcasts</a></li>
+    </ul>
+  </nav>
+
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
