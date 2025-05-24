@@ -29,45 +29,7 @@
         <main>
             {{ content }}
         </main>
-        <div class="right-menu" id="right-menu">
-            <h3>Recent Posts</h3>
-            <ul>
-                {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-                {% for post in sorted_posts limit:5 %}
-                    <li>
-                        <a href="{{ post.url | relative_url }}">{{ post.title | truncate: 50 }}</a>
-                        <small>{{ post.date | date: "%Y-%m-%d" }}</small>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const cacophonyLink = document.getElementById('cacophony-link');
-            const podcastsLink = document.getElementById('podcasts-link');
-            const rightMenu = document.getElementById('right-menu');
-
-            cacophonyLink.addEventListener('click', function(e) {
-                e.preventDefault();
-                window.location.href = this.href;
-                rightMenu.classList.add('visible');
-            });
-
-            podcastsLink.addEventListener('click', function(e) {
-                e.preventDefault();
-                window.location.href = this.href;
-                rightMenu.classList.remove('visible');
-            });
-
-            // Show right menu if on Cacophony page, hide on Podcasts page
-            if (window.location.pathname.includes('cacophony')) {
-                rightMenu.classList.add('visible');
-            } else if (window.location.pathname.includes('podcasts')) {
-                rightMenu.classList.remove('visible');
-            }
-        });
-    </script>
     <footer>
         <div class="content-wrapper">
             <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
