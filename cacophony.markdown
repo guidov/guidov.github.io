@@ -1,15 +1,21 @@
 ---
 layout: default
-title: Blog
+title: Notes
 ---
 
-# Blog
+# Notes
 
-# All Posts
+## All Posts
 
-{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-{% for post in sorted_posts %}
-  <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
-{% endfor %}
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>: {{ post.date | date: "%d %b %Y" }}
+      {% if post.excerpt and post.excerpt != "" %}
+      <p style="margin-top: 0.5em; margin-bottom: 1em;">{{ post.excerpt }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
 
 

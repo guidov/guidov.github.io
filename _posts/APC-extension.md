@@ -1,3 +1,9 @@
+---
+layout: post
+title: "APC Extension Setup"
+date: 2025-05-24
+---
+
 1. Open a terminal and navigate to the directory where you downloaded the AppImage.
     
 2. Make the AppImage executable:
