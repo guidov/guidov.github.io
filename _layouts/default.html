@@ -15,12 +15,15 @@
     </header>
     <div class="content-wrapper">
         <nav class="left-menu">
-            <ul>
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/about' | relative_url }}">About Me</a></li>
-                <li><a href="{{ '/cacophony' | relative_url }}" id="cacophony-link">Cacophony</a></li>
-                <li><a href="{{ '/podcasts' | relative_url }}" id="podcasts-link">Podcasts</a></li>
-                <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+            <div class="menu-header">
+                <h2>Navigation</h2>
+            </div>
+            <ul class="menu-items">
+                <li class="menu-item"><a href="{{ '/' | relative_url }}" class="menu-link">Home</a></li>
+                <li class="menu-item"><a href="{{ '/about' | relative_url }}" class="menu-link">About Me</a></li>
+                <li class="menu-item"><a href="{{ '/cacophony' | relative_url }}" class="menu-link" id="cacophony-link">Cacophony</a></li>
+                <li class="menu-item"><a href="{{ '/podcasts' | relative_url }}" class="menu-link" id="podcasts-link">Podcasts</a></li>
+                <li class="menu-item"><a href="{{ '/contact' | relative_url }}" class="menu-link">Contact</a></li>
             </ul>
         </nav>
         <main>
