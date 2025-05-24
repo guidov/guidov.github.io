@@ -2,32 +2,68 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    background-color: #ffffff;
+    background-color: #f4f7f6; // Softer background color
     color: #333333;
-    line-height: 1.6;
-    padding: 20px;
+    line-height: 1.7; // Increased line height for readability
+    padding: 0; // Remove body padding, handle spacing with containers
+    margin: 0; // Ensure no default margin
+    display: flex; // Use flexbox for overall layout
+    flex-direction: column; // Stack header, content, footer vertically
+    min-height: 100vh; // Ensure footer is at the bottom
 }
 
-.content-wrapper {
-    display: flex;
+header {
+    background-color: #343a40; // Dark header background
+    color: #ffffff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header .content-wrapper { // Target content-wrapper specifically within header
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    gap: 30px; // Add gap between left-menu and main-content
+    padding: 0 20px; // Horizontal padding
+    display: flex; // Keep header content on one line if needed
+    justify-content: space-between; // Example alignment
+    align-items: center;
+}
+
+header h1 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem; // Slightly larger site title
+}
+
+
+.main-flex-container { // Renamed from .content-wrapper for clarity
+    display: flex;
+    flex-grow: 1; // Allow this container to grow and fill space
+    max-width: 1200px;
+    width: 100%; // Ensure it takes full width up to max-width
+    margin: 20px auto; // Centering and vertical margin
+    padding: 0 20px; // Horizontal padding
+    gap: 30px;
 }
 
 .left-menu {
-    width: 200px; // Adjust width as needed
-    flex-shrink: 0; // Prevent shrinking
-    background-color: #f8f9fa; // Optional: background color for the menu
-    padding: 15px;
-    border-right: 1px solid #dee2e6; // Optional: border
+    width: 220px; // Slightly wider menu
+    flex-shrink: 0;
+    background-color: #ffffff; // White background for the menu
+    padding: 20px;
+    border-right: 1px solid #e0e0e0; // Softer border
+    box-shadow: 1px 0 3px rgba(0,0,0,0.05); // Subtle shadow
+    height: calc(100vh - 40px - 4rem); // Adjust based on header/footer height if they become fixed
+    position: sticky; // Make the menu sticky
+    top: 20px; // Stick 20px from the top
 }
 
 .menu-header h2 {
     margin-top: 0;
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.3em; // Larger menu header
+    color: #343a40; // Darker text for menu header
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 15px;
 }
 
 .menu-items {
@@ -37,62 +73,83 @@ body {
 }
 
 .menu-item {
-    margin-bottom: 10px;
+    margin-bottom: 8px; // Slightly less margin
 }
 
 .menu-link {
     text-decoration: none;
     color: #007bff;
     display: block;
-    padding: 8px 10px;
-    border-radius: 4px;
+    padding: 10px 15px; // More padding
+    border-radius: 5px; // More rounded corners
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; // Smooth transition
 }
 
 .menu-link:hover,
-.menu-link.active {
-    background-color: #e9ecef;
+.menu-link.active { // Assuming you might add an 'active' class with JS or Liquid
+    background-color: #007bff; // Primary color for active/hover
+    color: #ffffff;
     text-decoration: none;
 }
 
-.content {
-    flex: 1;
-    min-width: 300px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
+.main-content { // Renamed from .content for clarity
+    flex-grow: 1;
+    background-color: #ffffff; // White background for content
+    border-radius: 8px; // More rounded corners for content area
     padding: 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); // Softer shadow for content
 }
 
+footer {
+    background-color: #343a40; // Dark footer
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto; // Push footer to the bottom
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+footer .content-wrapper {  // Target content-wrapper specifically within footer
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; // Horizontal padding
+}
+
+
+// Remove generic .content-wrapper styling if it conflicts
+// or ensure it's only for the header/footer if needed.
+// The .main-flex-container now handles the main layout.
+
+/* Keep existing media queries but adjust selectors if needed */
 @media (max-width: 768px) {
-    .content-wrapper {
+    .main-flex-container { // Adjusted selector
         flex-direction: column;
     }
 
     .left-menu {
-        width: 100%; // Full width on smaller screens
-        border-right: none;
-        border-bottom: 1px solid #dee2e6; // Border at the bottom
-        margin-bottom: 20px;
-    }
-
-    .main-content {
-        padding: 15px 0; // Adjust padding for smaller screens
-    }
-
-    .sidebar {
         width: 100%;
-        position: static;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
         margin-bottom: 20px;
+        height: auto; // Allow height to adjust
+        position: static; // No longer sticky on mobile
     }
 
-    .simple-nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .main-content { // Adjusted selector
+        padding: 20px; // Adjust padding
+    }
+
+    header .content-wrapper, footer .content-wrapper {
+        padding: 0 15px; // Less padding on mobile for header/footer
     }
 }
 
+/* Remove or adjust old .sidebar and .simple-nav if not used */
+.sidebar, .simple-nav {
+    display: none; // Assuming these are no longer needed
+}
 
-/* About page styles */
+/* About page styles - keep if still relevant */
 .about-content {
     max-width: 800px;
     margin: 0 auto;
