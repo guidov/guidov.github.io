@@ -138,3 +138,9 @@ pip install guidance==0.0.64
 in the notebook
 %load_ext chapyter
 %chat -m gpt-4o-mini
+
+
+# Update for ai coding
+Just use notebook-intelligence
+https://blog.jupyter.org/introducing-notebook-intelligence-3648c306b91a
+

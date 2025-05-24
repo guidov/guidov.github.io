@@ -10,7 +10,8 @@ categories:
 
 # Exploring Whisper Simple Dictation
 
-In the world of speech-to-text technology, a new open-source tool has caught my attention: [Whisper Simple Dictation](https://github.com/filyp/whisper-simple-dictation). This powerful and user-friendly application leverages OpenAI's Whisper model to provide accurate and efficient speech recognition capabilities.
+In the world of speech-to-text technology, a new open-source tool has caught my attention: [Whisper Simple Dictation](https://github.com/guidov/whisper-simple-dictation). This powerful and user-friendly application leverages OpenAI's Whisper model to provide accurate and efficient speech recognition capabilities.
+This is a fork of: https://github.com/filyp/whisper-simple-dictation.git
 
 ## Key Features
 
@@ -30,7 +31,7 @@ To use Whisper Simple Dictation, follow these steps:
 
 1. Clone the GitHub repository and navigate to the project directory:
    ```bash
-   git clone https://github.com/filyp/whisper-simple-dictation.git
+   git clone https://github.com/guidov/whisper-simple-dictation.git
    cd whisper-simple-dictation
    ```
 
@@ -56,7 +57,7 @@ To use Whisper Simple Dictation, follow these steps:
    bash run_dictation_remote.sh en
    ```
 
-For more detailed instructions and troubleshooting, visit the [project's GitHub page](https://github.com/filyp/whisper-simple-dictation).
+For more detailed instructions and troubleshooting, visit the [project's GitHub page](https://github.com/guidov/whisper-simple-dictation).
 
 Note: Ensure you have Python 3.7 or later installed on your system before starting the installation process.
 
@@ -124,11 +125,9 @@ Replace `sk-your_api_key_here` with your actual OpenAI API key. This command wil
 
 ## User Experience
 
-In my experience, the tool is quite fast and accurate. It uses the right control key to transcribe speech to text (STT). While it doesn't work in GNOME terminals (stay tuned for a future post on this), it integrates well with code development environments like Microsoft Visual Studio Code ("code") and Cursor AI ("cursor").
+In my experience, the tool is quite fast and accurate. It uses the right control key to transcribe speech to text (STT). While it doesn't work in GNOME terminals (stay tuned for a future post on this), it integrates well with code development environments like Microsoft Visual Studio Code ("code") and Cursor AI ("cursor"). Waveterm is great also
 
 The speed and accuracy of the transcription have significantly improved my productivity, especially when working on coding projects or writing documentation.
 
 Remember, the power of open-source tools like Whisper Simple Dictation lies not just in their functionality, but also in the ability to customize and integrate them into your unique workflow. Happy dictating!
-
-I hear an LLM in the woods....
 
