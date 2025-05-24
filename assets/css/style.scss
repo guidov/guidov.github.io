@@ -1,3 +1,7 @@
+---
+# This front matter is required for Jekyll to process the SCSS file
+--- 
+
 @import "{{ site.theme }}";
 
 body {
@@ -116,39 +120,6 @@ footer .content-wrapper {  // Target content-wrapper specifically within footer
 }
 
 
-// Remove generic .content-wrapper styling if it conflicts
-// or ensure it's only for the header/footer if needed.
-// The .main-flex-container now handles the main layout.
-
-/* Keep existing media queries but adjust selectors if needed */
-@media (max-width: 768px) {
-    .main-flex-container { // Adjusted selector
-        flex-direction: column;
-    }
-
-    .left-menu {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #e0e0e0;
-        margin-bottom: 20px;
-        height: auto; // Allow height to adjust
-        position: static; // No longer sticky on mobile
-    }
-
-    .main-content { // Adjusted selector
-        padding: 20px; // Adjust padding
-    }
-
-    header .content-wrapper, footer .content-wrapper {
-        padding: 0 15px; // Less padding on mobile for header/footer
-    }
-}
-
-/* Remove or adjust old .sidebar and .simple-nav if not used */
-.sidebar, .simple-nav {
-    display: none; // Assuming these are no longer needed
-}
-
 /* About page styles - keep if still relevant */
 .about-content {
     max-width: 800px;
@@ -172,63 +143,4 @@ footer .content-wrapper {  // Target content-wrapper specifically within footer
 
 .about-content ul li {
     margin-bottom: 0.5em;
-}
-
-@media (max-width: 768px) {
-    .right-menu {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 20px;
-    }
-}
-
-header, footer {
-    background-color: #f0f0f0;
-    padding: 10px 0;
-}
-
-header h1 a {
-    color: #333333;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #333333;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-code {
-    background-color: #f0f0f0;
-    color: #333333;
-    padding: 2px 4px;
-    border-radius: 3px;
-}
-
-pre {
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 5px;
-    overflow-x: auto;
-}
-
-blockquote {
-    border-left: 4px solid #cccccc;
-    margin: 0;
-    padding-left: 20px;
-    color: #666666;
-}
-
-hr {
-    border: none;
-    border-top: 1px solid #cccccc;
-    margin: 20px 0;
 }
